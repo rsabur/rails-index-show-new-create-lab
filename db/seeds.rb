@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'faker'
+
+10.times do
+    Coupon.create(coupon_code: Faker::Cannabis.strain, store: Faker::Cannabis.brand)
+end
+
+puts "Seed Successful"
