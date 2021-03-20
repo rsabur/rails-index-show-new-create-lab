@@ -1,9 +1,10 @@
 <h1>Coupon Form</h1>
 
 <%= form_for @coupon do |f| %>
-    <%= f.label :coupon_code %>
-    <%= f.text_field :coupon_code %>
-    <%= f.label :coupon_for_store %>
+    <%= f.label 'Coupon Code:' %><br>
+    <%= f.text_field :coupon_code %><br>
+    <br>
+    <%= f.label 'Coupon for Store:' %><br>
     <%= f.text_field :store %>
 
     <%= f.submit 'Submit Coupon' %>
